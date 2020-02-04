@@ -8,7 +8,8 @@ const serializedRecipe = recipe => ({
 	title       : recipe.title,
 	nutrients   : recipe.nutrients,
 	ingredients : recipe.ingredients,
-	directions  : recipe.directions
+	directions  : recipe.directions,
+	recipe_url  : recipe.recipe_url
 });
 
 fourtosixRouter.route("/").get((req, res) => {
