@@ -4,6 +4,7 @@ const morgan = require("morgan");
 const cors = require("cors");
 const helmet = require("helmet");
 const { NODE_ENV } = require("./config");
+const logger = require("./logger");
 const fourtosixRouter = require("./fourtosix/fourtosix-router");
 const sixtoeightRouter = require("./sixtoeight/sixtoeight-router");
 const eighttotenRouter = require("./eighttoten/eighttoten-router");
@@ -29,6 +30,7 @@ app.get("/", (req, res) => {
 app.use(function errorHandler(error, req, res, next) {
 	let response;
 	if (NODE_ENV === "production") {
+		logger.error(`Server Error`);
 		response = { error: { message: "server error" } };
 	} else {
 		console.error(error);

@@ -227,7 +227,7 @@ VALUES
         'eighttoten', 
         'Effortless apples & chicken',
         ARRAY ['Protein', 'Vitamin B6', 'Iron', 'Magnesium'],
-        ARRAY ['1/3 cup boneless chicken, chopped and cooked', '1/4 cup natural applesauce', "Cinnamon powder"],
+        ARRAY ['1/3 cup boneless chicken, chopped and cooked', '1/4 cup natural applesauce', 'Cinnamon powder'],
         ARRAY ['1. Place chicken with cooked apple in a food processor.', '2. Add cinnamon to taste.', '3. Puree or mash to a consistency suitable for baby, adding water to thin if necessary.'],
         'https://www.thebump.com/a/baby-food-recipes-8-to-10-month-olds'
     ),
